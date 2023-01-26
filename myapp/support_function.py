@@ -1,4 +1,4 @@
-from myapp.models import Currency, Rates, City, Airport
+from myapp.models import Currency, Rates, City
 
 
 def get_currency_list():

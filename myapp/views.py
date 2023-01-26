@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse
 
 from myapp import support_function, models
-from myapp.models import Currency, AccountHolder, Airport
+from myapp.models import Currency, AccountHolder
 
 
 # Create your views here.

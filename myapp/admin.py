@@ -1,7 +1,7 @@
 # Register your models here.
 from django.contrib import admin
 # Register your models here.
-from myapp.models import Currency, Holding, Airport
+from myapp.models import Currency, Holding
 
 
 class HoldingInLine(admin.TabularInline):

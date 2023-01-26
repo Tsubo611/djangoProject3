@@ -13,8 +13,3 @@ class CurrencyAdmin(admin.ModelAdmin):
      inlines = [HoldingInLine]
 
 admin.site.register(Currency,CurrencyAdmin)
-
-class AirportAdmin(admin.ModelAdmin):
-    fields = ('code', 'name', 'city', 'state', 'country')
-
-admin.site.register(Airport, AirportAdmin)

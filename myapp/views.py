@@ -4,8 +4,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from myapp import support_function
-from myapp.models import Currency, AccountHolder
+from myapp import support_function, models
+from myapp.models import Currency, AccountHolder, Airport
 
 
 # Create your views here.

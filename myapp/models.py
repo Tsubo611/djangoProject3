@@ -31,23 +31,23 @@ class Rates(models.Model):
         return self.currency.iso + " " + self.x_currency + " " + str(self.rate)
 
 class AccountHolder(models.Model):
- user=models.OneToOneField(User,on_delete=models.CASCADE)
- date_of_birth = models.DateField()
- currencies_visited = models.ManyToManyField(Currency)
- def __str__(self):
-    return self.user.username
- def __repr__(self):
-    return self.user.username
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    date_of_birth = models.DateField()
+    currencies_visited = models.ManyToManyField(Currency)
+
+    def __str__(self):
+        return self.user.username
+    def __repr__(self):
+        return self.user.username
 
 class City(models.Model):
     name = models.CharField(max_length=50)
     wiki_link = models.URLField()
     latitude = models.FloatField(null=False)
-    longtitude = models.FloatField(null=False)
+    longitude = models.FloatField(null=False)
 
     def __str__(self):
         return self.name
 
     def __repr__(self):
-        return self.name + " " + str(self.latitude) + " " + \
-            str(self.longtitude) + " " + str(self.longtitude)
+        return self.name + " " + str(self.latitude) + " " + str(self.longitude)
